@@ -1,35 +1,72 @@
-// styles for header 
+.home-wrapper {
+    margin: 0 auto;
+    width: 1710px;
+}
+
 .header {
     color: #ffffff;
+    padding: 20px;
 
-.menu-primary {
-    display: block;
-    float: left;
-}
+    .social-btns {
+        display: inline-block;
 
-.header-address {
-    float: right;
-}
-}
-.home-wrapper {
-    position: relative;
-    background-color: black;
-    background-position: center;
-    background-size: cover;
-    text-align: left;
-    z-index: 1;
+        &__fb {
+            width: 7px;
+            height: 12px;
+            background-image: url(../img/icons/facebook-icon.png)
+        }
 
-    &::before {
-        content: '';
-        background-image: url(/assets/img/home-bg.jpg);
-        background-size: cover;
-        opacity: 0.7;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
+        &__pin {
+            width: 11px;
+            height: 11px;
+            background-image: url(../img/icons/pinterest-icon.png)
+        }
+
+        &__insta {
+            width: 11px;
+            height: 11px;
+            background-image: url(../img/icons/instagam-icon.png)
+        }
+
+        &__twitter {
+            width: 11px;
+            height: 9px;
+            background-image: url(../img/icons/twitter-icon.png)
+        }
+
+        &__google {
+            width: 16px;
+            height: 11px;
+            background-image: url(../img/icons/google-icon.png)
+        }
+    }
+
+    .header-address {
+        float: right;
+        padding: 10px 170px 10px 25px;
+        background-image: url(../img/icons/header-location-icon.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+    
+    .header-auth {
+        float: right;
+        font-size: inherit;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 5px 10px;
+
+        .auth__reg {
+            border-right: 2px solid #ffdd00;;
+        }
+
+            &::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
     }
 }
+
+
 
