@@ -1,11 +1,16 @@
 .home-wrapper {
     margin: 0 auto;
-    width: 1710px;
+    width: 1170px;
 }
 
 .header {
     color: #ffffff;
-    padding: 20px;
+
+    .menu-primary,
+    .menu-secondary {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
     .social-btns {
         display: inline-block;
@@ -43,7 +48,7 @@
 
     .header-address {
         float: right;
-        padding: 10px 170px 10px 25px;
+        padding: 10px 50px 10px 25px;
         background-image: url(../img/icons/header-location-icon.png);
         background-position: left center;
         background-repeat: no-repeat;
@@ -51,7 +56,6 @@
     
     .header-auth {
         float: right;
-        font-size: inherit;
         text-transform: uppercase;
         color: #ffffff;
         padding: 5px 10px;
@@ -66,7 +70,75 @@
                 clear: both;
             }
     }
+
+    .top-logo {
+        display: inline-block;
+        width: 170px;
+        height: 60px;
+        background-image: url(../img/icons/top-logo.png);
+        background-repeat: no-repeat;
+    }
+
+    .top-menu {
+        float: right;
+        margin-top: 15px;
+
+        &__item {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 18px;
+            padding: 10px 40px;
+
+            &:last-child {
+                padding-right: 20px; 
+            }
+        }
+    }
 }
 
+.heading-wrapper {
+    padding-top: 280px;
+    padding-bottom: 280px;
+    color: #ffffff;
 
+    .heading {
+        
+        &-phone {
+            height: 16px;
+            color: #ffc001;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            line-height: 30px;
+        }
+
+        &-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            line-height: 21px;
+        }
+
+        &-text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.24px;
+            line-height: 30px;
+        }
+
+        &-button {
+            margin-top: 45px;
+            color: #ffc001;
+            font-weight: 700;
+            font-size: inherit;
+            text-transform: uppercase;
+            padding: 15px 30px;
+            border: 1px solid #ffffff;
+            border-radius: 25px;
+            background-image: url();
+        }
+
+    }
+}
 
