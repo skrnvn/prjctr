@@ -59,7 +59,65 @@
             </button>
         </div>
         <div class="searchform-wrapper">
-            <!-- your form using js here :) -->
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Hotel')">Hotel</button>
+                <button class="tablinks" onclick="openTab(event, 'Tours')">Tours</button>
+                <button class="tablinks" onclick="openTab(event, 'Package')">Package</button>
+            </div>
+            
+            <!-- Tab content -->
+            <div id="Hotel" class="tabcontent">
+                <form class="search-wrap" action="">
+                    <label class="search-item" for="search-city">Where?<br>
+                        <input class="search-field" type="text" name="location" placeholder="Choose city" id="search-city">
+                    </label>
+                    <label class="search-item" for="search-hotel">Which?<br>
+                        <input class="search-field" type="text" name="city" placeholder="Choose hotel" id="search-hotel">
+                    </label>
+                    <label class="search-item" for="search-checkin">Check-in<br>
+                        <input class="search-field" type="date" name="checkin" id="search-checkin">
+                    </label>
+                    <label class="search-item" for="search-checkout">Check-out<br>
+                        <input class="search-field" type="date" name="checkout" id="search-checkout">
+                    </label>
+                    <button class="search-btn">Search</button>
+                </form>
+            </div>
+            <div id="Tours" class="tabcontent">
+                <form class="search-wrap" action="">
+                    <label class="search-item" for="search-location">Where?<br>
+                        <input class="search-field" type="text" name="location" placeholder="Choose location" id="search-location">
+                    </label>
+                    <label class="search-item" for="search-city">Which?<br>
+                        <input class="search-field" type="text" name="city" placeholder="Choose city" id="search-city">
+                    </label>
+                    <label class="search-item" for="search-start">Start<br>
+                        <input class="search-field" type="date" name="tour-start" id="search-start">
+                    </label>
+                    <label class="search-item" for="search-end">End<br>
+                        <input class="search-field" type="date" name="tour-end" id="search-end">
+                    </label>
+                    <button class="search-btn">Search</button>
+                </form>
+            </div>
+            <div id="Package" class="tabcontent">
+                <form class="search-wrap" action="">
+                    <label class="search-item" for="search-location">Where?<br>
+                        <input class="search-field" type="text" name="location" placeholder="Choose location" id="search-location">
+                    </label>
+                    <label class="search-item" for="search-city">Which?<br>
+                        <input class="search-field" type="text" name="city" placeholder="Choose city" id="search-city">
+                    </label>
+                    <label class="search-item" for="search-checkin">Check-in<br>
+                        <input class="search-field" type="date" name="checkin" id="search-checkin">
+                    </label>
+                    <label class="search-item" for="search-checkout">Check-out<br>
+                        <input class="search-field" type="date" name="checkout" id="search-checkout">
+                    </label>
+                    <button class="search-btn">Search</button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
