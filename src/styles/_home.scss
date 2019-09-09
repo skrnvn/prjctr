@@ -104,6 +104,8 @@
     padding-top: 280px;
     padding-bottom: 280px;
     color: #ffffff;
+    backdrop-filter: blur(1px);
+    background-attachment: fixed;
 
     .heading {
         

@@ -1,0 +1,255 @@
+.tours-wrapper {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.popular-slider {
+
+    h3, p {
+        padding: 10px;
+    }
+
+    .popular-slide {
+        position: relative;
+        display: inline-block;
+        width: 370px;
+        height: 370px;
+        overflow: hidden;
+
+        &:first-child {
+            float: left;
+        }
+
+        &:last-child {
+            float: right;
+        }
+
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 94px;
+            background-color: #f9f9f9;
+            opacity: 0.7;
+            transition: 0.4s;
+
+            &::before {
+                position: absolute;
+                bottom: 134px;
+                content: '';
+                width: 57px;
+                height: 57px;
+                border-radius: 50%;
+                opacity: 0;
+                background-image: url(/assets/img/icons/pop-slider-btn.png);
+                background-repeat: no-repeat;
+            }
+
+            .pop-info-price {
+                display: none;
+            }
+        }
+
+        &:hover {
+
+            .popular-slide__info {
+                height: 164px;
+                background-color: #ffc001;
+                opacity: 0.9;
+                transition: 0.3s;
+
+                &::before {
+                    position: absolute;
+                    bottom: 134px;
+                    content: '';
+                    width: 57px;
+                    height: 57px;
+                    border-radius: 50%;
+                    opacity: 1;
+                    transition: opacity 0.5s;
+                    background-image: url(/assets/img/icons/pop-slider-btn.png);
+                    background-repeat: no-repeat;
+                }
+
+                .pop-info-price {
+                    display: block;
+                }
+            }
+        }
+
+    }
+    
+
+}
+
+.popular-destinations-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.dest-slider-wrap {
+    margin-bottom: 200px;
+
+    .destinations-slider {
+        position: relative;
+        background-color: black;
+        
+        &__img {
+            opacity: 0.8;
+        }
+
+        &__sidebar {
+            position: absolute;
+            right: 39%;
+            bottom: -100px;
+            width: 24%;
+            height: 205px;
+            box-shadow: 0 15px 30px rgba(230, 230, 230, 0.3);
+            border-radius: 5px;
+            background-color: #ffffff;
+            opacity: 0.75;
+
+            .slider-heading {
+                padding: 25px;
+            }
+
+            .sidebar-large {
+                font-size: 0;
+
+                .sidebar-item {
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #ffc001;
+                    border-right: none;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    &:last-child {
+                        border: 1px solid #ffc001;
+                    }
+                }
+
+                &__view {
+                    background-image: url(../img/icons/wiev-icon.png);
+                }
+
+                &__like {
+                    background-image: url(../img/icons/like-icon.png);
+                }
+
+                &__comment {
+                    background-image: url(../img/icons/comment-icon.png);
+                }
+
+                &__share {
+                    background-image: url(../img/icons/share-icon.png);
+                }
+
+                &__video {
+                    background-image: url(../img/icons/video-icon.png);
+                }
+            }
+        }
+    }
+}
+
+.honeymoon-slider-wrapper {
+
+    padding-top: 50px;
+    
+    p, h3 {
+        padding: 10px 15px;
+    }
+
+    .honeymoon-slide {
+        position: relative;
+        display: inline-block;
+        width: 620px;
+        height: 357px;
+        box-shadow: 0 0 35px rgba(186, 197, 198, 0.25);
+        background-color: #ffffff;
+
+        &:first-child {
+            float: left;
+        }
+
+        &:last-child {
+            float: right;
+        }
+
+        &__img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60%;
+        }
+
+        &__text {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 40%;
+            text-align: center;
+            color: #616161;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0.23px;
+
+            .slider-heading {
+                color: #333333;
+                font-size: 24px;
+                font-weight: 400;
+            }
+
+            .slider-price {
+                color: #ffc001;
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+            }
+
+            .slider-rate {
+                width: 85px;
+                height: 13px;
+                background-image: url(../img/icons/slider-rate.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 10px auto;
+            }
+
+            .slider-btn {
+                width: 100%;
+                color: #ffc001;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21px;
+                text-transform: uppercase;
+                letter-spacing: 0.8px;
+                padding: 15px 10px;
+
+                &:hover {
+                    background-color: #ffc001;
+                    color: #ffffff;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.8px;
+                }
+            }
+        }
+
+    }
+}

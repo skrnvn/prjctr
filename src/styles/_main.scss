@@ -8,7 +8,7 @@ input[type='date'] {
 }
 
 .container {
-    min-width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
     text-align: center;
 
@@ -40,4 +40,20 @@ input[type='date'] {
 .header-icon {
     display: inline-block;
     margin: 10px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+.wrap {
+
+    &-title {
+        padding: 15px;
+    }
+
+    &-text {
+        padding: 10px;
+    }
 }
