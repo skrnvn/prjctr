@@ -97,6 +97,7 @@
 }
 
 .dest-slider-wrap {
+    width: 100%;
     margin-bottom: 200px;
 
     .destinations-slider {
@@ -172,10 +173,9 @@
     }
 
     .honeymoon-slide {
-        position: relative;
+        font-size: 0;
         display: inline-block;
-        width: 620px;
-        height: 357px;
+        width: 32%;
         box-shadow: 0 0 35px rgba(186, 197, 198, 0.25);
         background-color: #ffffff;
 
@@ -188,16 +188,13 @@
         }
 
         &__img {
-            position: absolute;
-            left: 0;
-            bottom: 0;
+            display: inline-block;
             width: 60%;
+            vertical-align: bottom;
         }
 
         &__text {
-            position: absolute;
-            right: 0;
-            bottom: 0;
+            display: inline-block;
             width: 40%;
             text-align: center;
             color: #616161;

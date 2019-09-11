@@ -142,6 +142,11 @@
             padding: 15px 30px;
             border: 1px solid #ffffff;
             border-radius: 25px;
+
+            &:hover {
+                background-color: #ffc001;
+                color: #ffffff;
+            }
         }
 
     }

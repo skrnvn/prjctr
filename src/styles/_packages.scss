@@ -1,0 +1,195 @@
+.packages-wrap {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.best-packages {
+    padding: 150px 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__text {
+        display: inline-block;
+        text-align: left;
+
+        .pack-discount {
+            text-transform: capitalize;
+            color: #ffc001;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.24px;
+            line-height: 36px;
+        }
+
+        .pack-text {
+            color: #616161;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.23px;
+            padding: 40px 0 50px 0;
+        }
+
+        .pack-btn {
+            border-radius: 3px;
+            background-color: #ffc001;
+            border: 1px solid #ffc001;
+            color: #fefefe;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 30px;
+            text-transform: uppercase;
+            padding: 10px 25px;
+
+            &:hover {
+                background-color: #fefefe;
+                color: #ffc001;
+            }
+        }
+    }
+
+    &__img {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.discount-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 120px;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .disc-btn {
+        color: #fbad03;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        text-transform: uppercase;
+        letter-spacing: 0.21px;
+        padding: 10px 30px;
+        border: 1px solid #fbad03;
+        border-radius: 50px;
+        margin: 50px 0 30px;
+
+        &:hover {
+            background-color: #fbad03;
+            color: #fefefe;
+        }
+    }
+
+    .discount-counter {
+        
+        .count-item {
+            display: inline-block;
+            padding: 75px;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 30px;
+            font-size: 16px;
+
+            &__number {
+                font-size: 36px;
+            }
+        }
+
+        &__days {
+            color: #fbad03;
+        }
+
+        &__hours {
+            color: #ef6f6c;
+        }
+
+        &__minutes {
+            color: #28c190;
+        }
+
+        &__seconds {
+            color: #333333;
+        }
+    }
+}
+
+.big-deal-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffc001;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    z-index: 1;
+    color: #ffffff;
+    padding: 75px 0 225px;
+
+    &::before {
+        content: '';
+        background-image: url(../img/big-deal-bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.15;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .big-deal {
+
+        &__heading {
+            text-transform: uppercase;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 21px;
+            text-transform: uppercase;
+            letter-spacing: 5.6px;
+            padding: 30px;
+        }
+
+        &__form {
+            margin: 0 auto;
+            font-size: 0;
+
+            input[type='email'] {
+                border-radius: 3px 0 0 3px;
+                background-color: #ffffff;
+                padding: 15px 30px;
+                color: #1b2739;
+                font-size: 16px;
+                width: 400px;
+                display: inline-block;
+            }
+
+            button[type='submit'] {
+                border-radius: 0 3px 3px 0;
+                background-color: #1b2739;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                text-transform: uppercase;
+                letter-spacing: 0.7px;
+                padding: 14px;
+                display: inline-block;
+            }
+        }
+
+        &__prewiev {
+            position: absolute;
+            bottom: -165px;
+            right: 270px;
+        }
+    }
+}
