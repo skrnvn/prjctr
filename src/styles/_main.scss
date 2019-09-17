@@ -79,9 +79,37 @@ input[type='date'] {
         max-width: 1920px;
         margin: 0 auto 170px;
     }
+
+    &--footer {
+        max-width: 1920px;
+        margin: 0 auto;
+        font-size: 14px;
+        position: relative;
+        background-color: #1b2739;
+        background-position: center;
+        background-size: cover;
+        text-align: left;
+        color: #ffffff;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            background-image: url(../img/footer-dots.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.7;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            }        
+    }
+
 }
 
-.header-icon {
+.social-icon {
     display: inline-block;
     margin: 10px;
 }
@@ -108,5 +136,39 @@ input[type='date'] {
         font-weight: 400;
         line-height: 30px;
         letter-spacing: 0.24px;
+    }
+}
+
+.social-btns {
+    display: inline-block;
+
+    &__fb {
+        width: 7px;
+        height: 12px;
+        background-image: url(../img/icons/facebook-icon.png)
+    }
+
+    &__pin {
+        width: 11px;
+        height: 11px;
+        background-image: url(../img/icons/pinterest-icon.png)
+    }
+
+    &__insta {
+        width: 11px;
+        height: 11px;
+        background-image: url(../img/icons/instagam-icon.png)
+    }
+
+    &__twitter {
+        width: 11px;
+        height: 9px;
+        background-image: url(../img/icons/twitter-icon.png)
+    }
+
+    &__google {
+        width: 16px;
+        height: 11px;
+        background-image: url(../img/icons/google-icon.png)
     }
 }
