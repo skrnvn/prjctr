@@ -29,6 +29,14 @@
                 font-weight: 400;
                 line-height: 21px;
                 text-transform: uppercase;
+
+                &::after {
+                    content: " ";
+                    display: block;
+                    width: 24px;
+                    margin-top: 15px;
+                    border: 1px solid #ffc001;
+                }
             }
 
             &-text {
@@ -37,6 +45,10 @@
                 font-weight: 400;
                 line-height: 21px;
                 padding-top: 30px;
+
+                a:hover {
+                    color: #ffc001;
+                }
             }
 
             &-contacts {
@@ -45,18 +57,16 @@
                     padding: 10px 0 10px;
                 }
 
-                .contacts__logo {
-                    padding-bottom: 30px;
+                .contacts-wrap {
+                    padding: 45px 0 45px;
                 }
-            }
-
-            &-support {
-
             }
         }
     }
 
     &-bottom {
+        color: #ffffff;
+        opacity: 0.5;
         padding-top: 50px;
 
         .copyright {

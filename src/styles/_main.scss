@@ -172,3 +172,72 @@ input[type='date'] {
         background-image: url(../img/icons/google-icon.png)
     }
 }
+
+// dots styles
+.my-dots {
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .my-dots li {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ffdd00;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .my-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  
+  .my-dots li button:hover,
+  .my-dots li button:focus {
+    outline: none;
+  }
+  
+  .my-dots li button:hover:before,
+  .my-dots li button:focus:before {
+    opacity: 1;
+  }
+  
+  .my-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    opacity: 0;
+    color: black;
+    content: '';
+    background-color: #ffdd00;
+     
+  }
+  
+  .my-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+  }

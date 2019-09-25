@@ -20,3 +20,11 @@ function openTab(evt, chapterName) {
     evt.currentTarget.className += " active";
   }
   
+
+  $("#popular-slider").slick({
+    variableWidth: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    dotsClass: 'my-dots',
+  })
